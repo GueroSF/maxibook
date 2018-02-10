@@ -1,0 +1,2 @@
+2018/02/10 22:20:50 [error] 5836#5836: *1 directory index of "/home/guerosf/www/maxi/web/" is forbidden, client: 127.0.0.1, server: maxi.local, request: "GET / HTTP/1.1", host: "maxi.local", referrer: "http://maxi.local/"
+2018/02/10 22:22:49 [error] 5836#5836: *2 directory index of "/home/guerosf/www/maxi/web/" is forbidden, client: 127.0.0.1, server: maxi.local, request: "GET / HTTP/1.1", host: "maxi.local", referrer: "http://maxi.local/"
