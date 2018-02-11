@@ -16,7 +16,6 @@ use yii\base\Model;
  * @package app\models
  *
  * Модель для формы.
- * Выполняет вычисления.
  *
  * @property int|float num1
  * @property int|float num2
@@ -52,19 +51,5 @@ class FormMath extends Model
             'num2'   => 'Число 2',
             'action' => 'Действие',
         ];
-    }
-
-    /**
-     * Выполняет вычисления или выводит предупреждение если деление на ноль
-     *
-     * @return mixed|string
-     */
-    public function result()
-    {
-        if ($this->num2 == 0){
-            return 'Деление на ноль. Не в этот раз.';
-        }
-        $func = $this->num1.Actions::ACTIONS[$this->action].$this->num2;
-        return eval('return '.$func.';');
     }
 }

@@ -9,6 +9,7 @@
 namespace app\controllers;
 
 
+use app\models\OperationMath;
 use yii\web\Controller;
 use yii\web\Response;
 use yii\widgets\ActiveForm;
@@ -26,7 +27,8 @@ class MathController extends Controller
                 if (!$model->validate()){
                     return ActiveForm::validate($model);
                 }
-                return ['result' => $model->result()];
+                $operation = new OperationMath([$model->num1,$model->num2],$model->action);
+                return ['result' => $operation->result()];
             }
 
         }
