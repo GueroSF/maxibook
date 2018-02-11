@@ -8,7 +8,12 @@
 
 namespace app\models;
 
-
+/**
+ * Class Actions
+ * @package app\models
+ *
+ * содержит допустимые действия для вычислений
+ */
 class Actions
 {
     const ADDITION = 1;

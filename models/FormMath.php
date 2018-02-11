@@ -11,7 +11,17 @@ namespace app\models;
 
 use yii\base\Model;
 
-
+/**
+ * Class FormMath
+ * @package app\models
+ *
+ * Модель для формы.
+ * Выполняет вычисления.
+ *
+ * @property int|float num1
+ * @property int|float num2
+ * @property string action
+ */
 class FormMath extends Model
 {
     public $num1;
@@ -44,6 +54,11 @@ class FormMath extends Model
         ];
     }
 
+    /**
+     * Выполняет вычисления или выводит предупреждение если деление на ноль
+     *
+     * @return mixed|string
+     */
     public function result()
     {
         if ($this->num2 == 0){

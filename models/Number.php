@@ -11,6 +11,12 @@ namespace app\models;
 
 use yii\base\Model;
 
+/**
+ * Class Number
+ * @package app\models
+ *
+ * @property int|float num
+ */
 class Number extends Model
 {
     public $num;
